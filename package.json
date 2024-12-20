@@ -3,13 +3,19 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "parcel ./index.html",
-    "build": "parcel build ./index.html"
+    "build": "parcel build ./index.html",
+    "vercel": "vercel dev"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "parcel": "^2.13.3"
+    "dotenv": "^16.4.7",
+    "parcel": "^2.13.3",
+    "vercel": "^39.2.2"
+  },
+  "dependencies": {
+    "node-fetch": "^2.7.0"
   }
 }
