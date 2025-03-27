@@ -26,6 +26,33 @@ React의 핵심 개념인 **Component**, **Router**, **Store** 구조를 바닐�
 | ⚡ 자동 렌더링     | 상태 변경 시 구독된 콜백을 실행하여 UI를 자동으로 업데이트  |
 | 🧼 구조적 설계     | 컴포넌트, 라우터, 스토어를 분리하여 모듈화 구조 구현        |
 
+
+[ index.html ]
+     |
+     v
+[ main.js ] -------------------------------
+     |                                      |
+     v                                      v
+[ createRouter() ]                      [ new Component() ]
+     |                                      |
+     v                                      v
+[ routeRender() ] <---- [ routes.js ]   [ render() → this.el ]
+     |
+     v
+[ router-view ] ← 실제 페이지에 동적으로 렌더링
+
+                     [ Store ]
+                        |
+               상태(state) 관리 및 구독(subscribe)
+                        |
+     ---------------------------------------------------
+     |                         |                        |
+[ MovieComponent ]    [ HeaderComponent ]     [ FooterComponent ]
+     |
+     v
+[ this.state / this.props → render() ]
+
+
 ---
 
 ## 🗂️ 프로젝트 구조
