@@ -26,7 +26,7 @@ React의 핵심 개념인 **Component**, **Router**, **Store** 구조를 바닐�
 | ⚡ 자동 렌더링     | 상태 변경 시 구독된 콜백을 실행하여 UI를 자동으로 업데이트  |
 | 🧼 구조적 설계     | 컴포넌트, 라우터, 스토어를 분리하여 모듈화 구조 구현        |
 
-
+```js
 [index.html]
     |
     v
@@ -51,7 +51,7 @@ React의 핵심 개념인 **Component**, **Router**, **Store** 구조를 바닐�
     |
     v
 [this.state / this.props → render()]
-
+```
 
 ## 🗂️ 프로젝트 구조
 
